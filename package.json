@@ -1,16 +1,20 @@
 {
   "name": "davidsite",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Personal website and blog",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
-  "keywords": [],
+  "keywords": ["blog", "personal-site"],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
+    "clean-css": "^5.3.2",
+    "html-minifier": "^4.0.0",
+    "luxon": "^3.3.0"
   }
 }
